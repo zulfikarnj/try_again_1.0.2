@@ -1,14 +1,13 @@
 TARGET_COLUMN: SalePrice
 DATA_PATH: data/train.csv
-TEST_SIZE: 0.2
+TEST_SIZE: 0.3
 scoring:
 - neg_root_mean_squared_error
-- neg_root_mean_percentage_error
 - r2
-n_iter_search: 20
+n_iter_search: 3
 verbosity: 2
-cv: 20
-random_state: 222
+cv: 6
+random_state: 123
 
 NUM_COLUMN:
 - MSSubClass
